@@ -1,4 +1,14 @@
 interface Interf {
-    public void m();
-    String l = null;
+    boolean isTooHigh(int height, int limit);
+}
+
+class Climber {
+    public static void main(String[] args) {
+//        check((c, h) ->);
+    }
+    private static void check(Interf climb, int height) {
+        if (climb.isTooHigh(height, 10)) // x2
+            System.out.println("too high");
+        else System.out.println("ok");
+    }
 }

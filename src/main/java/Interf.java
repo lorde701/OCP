@@ -4,7 +4,7 @@ interface Interf {
 
 class Climber {
     public static void main(String[] args) {
-//        check((c, h) ->);
+        check((c, h) -> c > h, 11);
     }
     private static void check(Interf climb, int height) {
         if (climb.isTooHigh(height, 10)) // x2

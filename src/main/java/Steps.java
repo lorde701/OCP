@@ -1,5 +1,9 @@
+import javafx.util.Pair;
+
 import java.time.*;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Steps {
 
@@ -77,13 +81,77 @@ public class Steps {
 //                .forEach(System.out::println);
 
 
+//        LocalDate date = LocalDate.of(2015, 5, 25);
+//        LocalTime time = LocalTime.of(11, 55, 00);
+//        ZoneId zone = ZoneId.of("US/Eastern");
+//        ZonedDateTime zonedDateTime = ZonedDateTime.of(date, time, zone);
+//        Instant instant = zonedDateTime.toInstant(); // 2015–05–25T15:55:00Z
+//        System.out.println(zonedDateTime); // 2015–05–25T11:55–04:00[US/Eastern]
+//        System.out.println(instant); // 2015–05–25T15:55:00Z
+//        Instant i = Instant.now();
+//        System.out.println(i);
+
+//        StringBuilder b = new StringBuilder();
+//        b.append(12345).append('-');
+//        StringBuilder b2 = b.reverse();
+//        System.out.println(b.toString()); // -54321
+//        System.out.println(b == b2); // true
+
+//        int i = Integer.MAX_VALUE;
+//        System.out.println(i);
+//        System.out.println(i + 1);
+//        System.out.println(i + 2);
+//        System.out.println(i + 2);
+//        System.out.println(i + 1 == -2147483648);
 
 
-        Period wr = Period.ofYears(1).plusMonths(2);
-        System.out.println(LocalDate.now().plus(wr));
-        Period wrong = Period.ofYears(1).ofWeeks(1);
+//        Pattern p = Pattern.compile("\\[((((\\d+)|\\d+-(\\d+|\\*));*)+)\\]");
+//        Matcher m = p.matcher("17) Процесс 11[5-6]\n" +
+//                "17) Процесс 11[5-6;1-2]\n" +
+//                "17) Процесс 11[5-6;1-*]\n" +
+//                "17) Процесс 11[5-6;1-*]\n" +
+//                "17) Процесс 11[5-6;1-*]\n" +
+//                "17) Процесс 11[5-6;1-*]\n" +
+//                "17) Процесс 11[5-6;1-*]\n" +
+//                "17) Процесс 11[5-6;1-*]\n" +
+//                "17) Процесс 11[5-6;1-*]\n" +
+//                "17) Процесс 11[5-6;1-*]\n" +
+//                "17) Процесс 11[5-*;1-2]\n" +
+//                "17) Процесс 11[5-6;1-*]\n" +
+//                "17) Процесс 11[5;6;8]");
+//        while (m.find())
+//            System.out.println(m.group());
+
+//        Locale locale = Locale.getDefault();
+//        System.out.println(locale);
+//        System.out.println(Locale.FRANCE);
+
+        System.out.println(Locale.getDefault()); // en_US
+        Locale locale = new Locale("fr");
+        Locale.setDefault(locale); // change the default
+        System.out.println(Locale.getDefault()); // fr
 
 
+        A a = new B();
+        a.getClassName();
+        a.getsmhdgjs();
+    }
+
+    static class A {
+        void getClassName() {
+            System.out.println("A");
+        }
+    }
+
+    static class B extends A {
+        @Override
+        void getClassName() {
+            System.out.println("B");
+        }
+
+        void getsmhdgjs() {
+            System.out.println("sdfjh");
+        }
     }
 
     private static void threeDigit(Optional<Integer> optional) {

@@ -134,7 +134,7 @@ public class Steps {
 
         A a = new B();
         a.getClassName();
-        a.getsmhdgjs();
+//        a.getsmhdgjs();
     }
 
     static class A {

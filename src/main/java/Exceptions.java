@@ -28,7 +28,7 @@ public class Exceptions {
 
         try {
 
-        } catch (SQLException e) {
+        } catch (RuntimeException e) {
 
         }
     }

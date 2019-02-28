@@ -38,7 +38,7 @@ public class Exceptions {
             mightThrow();
             } catch (FileNotFoundException | IllegalStateException e) {
             } catch (InputMismatchException | MissingResourceException e) {
-            } catch (SQLException | ArrayIndexOutOfBoundsException e) {
+            } catch (ArrayIndexOutOfBoundsException e) {
             } catch (IllegalArgumentException e) {
          } catch (IOException e) {
          } catch (Exception e) {
